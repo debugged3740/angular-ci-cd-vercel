@@ -30,7 +30,7 @@ jobs:
         run: vercel pull --yes --env=production --token=$VERCEL_TOKEN
 
       - name: Build Project Artifacts
-        runs: vercel build --prod --token=$VERCEL_TOKEN
+        run: vercel build --prod --token=$VERCEL_TOKEN
 
       - name: Deploy Project Artifacts
         run: vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
